@@ -8,6 +8,7 @@ function WeatherReport() {
 
     const [address, setaddress] = useState("")
     const [city, setcity] = useState("")
+    const [coords, setcoords] = useState("")
 
 
 
@@ -16,7 +17,7 @@ function WeatherReport() {
     }, [])
 
 
-    const [coords, setcoords] = useState("")
+   
 
     const GetCoordinates = () => {
         navigator.geolocation.getCurrentPosition(pos => { setcoords(pos.coords) })
@@ -37,7 +38,7 @@ function WeatherReport() {
 
 
 
-    const loaddata = () => {
+    const GetTemp = () => {
         axios.get(`https://api.weatherbit.io/v2.0/current?city=${city}&country=TR&key=672f913578e4404e99164b83dc0e4854`)
             .then(res => console.log(res.data.data[0].temp))
     }
@@ -47,9 +48,9 @@ function WeatherReport() {
         <>
 
             <h1>asdsadaasdasd</h1>
-            <button onClick={() => loaddata()}>BUTON1</button>
-            <button onClick={() => GetData()}>BUTON2</button>
-            <button onClick={() => GetCoordinates()}>BUTON3</button>
+            <button onClick={() => GetTemp()}>GetTemp</button>
+            <button onClick={() => GetData()}>GetAdress /city</button>
+            <button onClick={() => GetCoordinates()}>GetCoordinates</button>
 
         </>
     )
