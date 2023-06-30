@@ -1,19 +1,21 @@
 
 import './App.css';
-import WeatherReport from './Components/WeatherReport';
+import BeforeApp2 from './BeforeApp2';
+
 
 
 
 function App() {
-  
-  return(
-<>
-<WeatherReport/>
-</>
+
+  return (
+    <>
+
+     <BeforeApp2/>
+    </>
 
 
   )
-  
+
 }
 
 export default App;

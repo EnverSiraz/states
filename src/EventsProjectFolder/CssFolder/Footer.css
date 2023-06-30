@@ -1,0 +1,60 @@
+#f11{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 3fr;
+    background-image: linear-gradient(to top, #fca311 5%,black 00%);
+    height:190px;
+    margin-top: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
+    
+    
+   
+}
+
+#b11 {
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top:5px;
+    padding-bottom: 10px;
+}
+
+.b12{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.b15{
+    color:black;
+}
+
+.b15:hover{
+    
+font-size: large;
+color:white
+}
+
+
+
+
+#b11:hover{
+    background-image: linear-gradient(to top, #fca311 94%,black 15%);
+    
+    color: black;
+
+ 
+}   
+
+hr{
+    border: 1px solid black;
+    color: blue;
+    margin-left: -22px;
+    margin-right: -22px;
+}
+
+#blist:hover{
+color: white;
+font-weight: bolder;
+
+}

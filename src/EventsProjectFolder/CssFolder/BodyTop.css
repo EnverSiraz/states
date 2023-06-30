@@ -1,0 +1,42 @@
+#main {
+   margin-top: 60px;
+   margin-bottom:20px;
+   
+    display: flex;   
+    justify-content: center;
+}
+
+#pict {
+    
+    background-image: url("MainPhoto.png");
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    
+    background-position: center;
+    height: 350px;
+    width: 100%;
+}
+
+
+#inp1{
+    font-size: xx-large;
+    border-radius: 5px;
+    border-color:#fca311;
+    width: 470px;
+    
+    
+
+}
+
+#btn1{
+    background-image: url("logoSmallOrange.png");
+    width: 100px;
+    height: 100px;
+    border: 0cap;
+}

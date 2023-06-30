@@ -13,16 +13,35 @@ function WeatherReport() {
 
 
     useEffect(() => {
+        getEvents()
 
     }, [])
 
 
-   
+    // const GetTempForLocation = () => {
+    //     navigator.geolocation.getCurrentPosition(pos => {
+    //         axios.get(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${pos.coords.latitude}&lon=${pos.coords.longitude}`).then(res => {
+    //             console.log(res.data.adress.province)
+    //         })
+    //     }
+    //     )
+    // }
+
+
+
 
     const GetCoordinates = () => {
-        navigator.geolocation.getCurrentPosition(pos => { setcoords(pos.coords) })
-        console.log(coords.latitude,coords.longitude)
+        navigator.geolocation.getCurrentPosition(pos => {
+            setcoords(pos.coords);
+            console.log(pos.coords.latitude, pos.coords.longitude)
+        })
 
+
+
+    }
+
+    const WriteCoord = () => {
+        console.log(coords.latitude, coords.longitude)
     }
 
 
@@ -44,6 +63,18 @@ function WeatherReport() {
     }
 
 
+
+    const [events, setevents] = useState([])
+
+    const getEvents = () => {
+        axios.get("https://localhost:7209/api/Event")
+            .then(res => {
+                setevents(res.data)
+                console.log(res.data)
+            })
+    }
+
+
     return (
         <>
 
@@ -51,6 +82,39 @@ function WeatherReport() {
             <button onClick={() => GetTemp()}>GetTemp</button>
             <button onClick={() => GetData()}>GetAdress /city</button>
             <button onClick={() => GetCoordinates()}>GetCoordinates</button>
+            <button onClick={() => WriteCoord()}>Wr</button>
+            {/* <button onClick={() => GetTempForLocation()}>GetTempForLocation</button> */}
+
+            <hr />
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Event Name</th>
+                        <th>Event Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        events && events.map(element => {
+                            return <tr>
+                                <td>{element.id}</td>
+                                <td>{element.eventName}</td>
+                                <td>{element.eventDescription}</td>
+                            </tr>
+                        })
+                    }
+                </tbody>
+
+
+            </table>
+
+
+
+
+
 
         </>
     )

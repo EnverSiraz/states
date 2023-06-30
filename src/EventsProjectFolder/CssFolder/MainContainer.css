@@ -1,0 +1,80 @@
+.MainCont {
+
+    height: 102px;
+    background-image: linear-gradient(to bottom, #fca311 5%, black 00%);
+    font-size: large;
+
+
+}
+
+.GridMain {
+    height: 102px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+
+}
+
+#LogoImg {
+
+    background-image: url("logoSmallOrange.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 80px;
+
+
+}
+
+#MottoImg {
+    background-image: url("mottov5.png");
+    margin-left: 20px;
+    height: 80px;
+    width: 388px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+#box1 {
+    display: flex;
+    height: 102px;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+#box2 {
+    display: flex;
+    height: 102px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+
+
+
+
+
+#box1:hover {
+
+    background-image: linear-gradient(to bottom, #fca311 90%,black 15%);
+    color:black;
+    font-weight: 700;
+    font-size: x-large;
+
+}
