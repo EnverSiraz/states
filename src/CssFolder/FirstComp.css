@@ -1,0 +1,96 @@
+@font-face {
+    font-family: enverFont ;
+    src: url("../Fonts/Akshar-Regular.ttf");
+}
+
+@media screen and (min-width: 1920px) {
+}
+
+@media screen and (max-width: 1920px) {
+}
+
+@media screen and (max-width: 992px) {
+  #mottodiv {
+    visibility: hidden;
+    width: 0%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mottodiv {
+    visibility: hidden;
+  }
+  #supportdiv {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 576px) {
+  #mottodiv {
+    visibility: hidden;
+    width: 0px;
+  }
+  #phonediv {
+    visibility: hidden;
+    width: 0px;
+  }
+  
+}
+
+#doubles{
+    height: 102px;
+  }
+
+#maintop {
+  height: 102px;
+  background-image: linear-gradient(to bottom, #fca311 5%, black 00%);
+  font-size: large;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  font-family: enverFont;
+}
+
+.box1 {
+  display: flex;
+  color: aliceblue;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.box2 {
+  display: flex;
+  color: aliceblue;
+}
+#logodiv {
+  background-image: url("../Images/Tlogo.png");
+  width: 115px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-position: left;
+  height: 80px;
+  flex-basis: 115px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+#mottodiv {
+  background-image: url("../Images/mottov6.png");
+  height: 80px;
+  width: 290px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#doubles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1:hover {
+  background-image: linear-gradient(to bottom, #fca311 90%, black 15%);
+  color: black;
+  
+}

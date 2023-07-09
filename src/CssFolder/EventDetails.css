@@ -1,0 +1,159 @@
+@media screen and (min-width: 1920px) {
+  #box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  #box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #ticketdiv {
+    visibility: hidden;
+    position: absolute;
+  }
+  #box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+    #ticketdiv {
+        visibility: hidden;
+        position: absolute;
+        width: 0px;
+      }
+      #box {
+        grid-template-columns: 1fr;
+      }
+      #ticket3{
+       margin-left:-1020px ;
+      }
+}
+
+#ticketdiv {
+  margin-top: 40px;
+  background-color: #fca311;
+  display: grid;
+  height: 455px;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  grid-template-columns: 2fr 9fr 3fr;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), #fca311);
+}
+
+#threepart {
+  display: flex;
+  justify-content: space-around;
+}
+
+#ticket3 {
+  background-color: black;
+  color: aliceblue;
+  max-height: 455px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  min-width: 130px;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  margin-top: -5px;
+}
+#ticket2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-height: 455px;
+  margin-bottom: 20px;
+}
+#tickettop {
+  color: aliceblue;
+}
+#namer {
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 70px;
+}
+#desc {
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 20px;
+}
+
+#placeDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+#eventDiv {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+#dividi2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(245, 246, 252, 0.52),
+    #fca311
+  );
+}
+
+#left1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+#biggest {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#ticket1 {
+  background-image: url("../Images/barkodeBlack.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  background-position-x: right;
+  max-height: 455px;
+  min-width: 100px;
+}
+
+#ticket31 {
+  background-image: url("../Images/barkodeWhite2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 80px;
+}
+#ticket32 {
+  color: aliceblue;
+  transform: rotate(90deg);
+  padding-left: 100px;
+}
+
+#box {
+  display: grid;
+}

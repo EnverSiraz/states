@@ -2,11 +2,19 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#everyone{
+  min-height:100vh;
+  position:relative;
 }
-
+#idbot{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 820px;
+}
+#idmid{
+  min-height: 11111px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

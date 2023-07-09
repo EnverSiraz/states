@@ -1,22 +1,57 @@
+@media screen and (min-width: 1920px) {
+    #f11{grid-template-columns: 2fr     };
+    #b11{flex-direction: column;}
+  }
+  
+  @media screen and (max-width: 1920px) {
+    #f11{grid-template-columns: 2fr};
+  }
+  
+  @media screen and (max-width: 992px) {
+    #f11{grid-template-columns: 2fr};
+    #b15{flex-direction: row;}
+  }
+  
+  @media screen and (max-width: 768px) {
+    #f11{grid-template-columns: 2fr};
+    #b15{flex-direction: column;}
+  }
+  
+  @media screen and (max-width: 576px) {
+    #f11{grid-template-columns: 2fr} ;
+    #b15{flex-direction: column;}
+
+    }
+    
+
+  
+
 #f11{
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 3fr;
+
     background-image: linear-gradient(to top, #fca311 5%,black 00%);
-    height:190px;
+    min-height: max-content;
     margin-top: 40px;
     padding-right: 10%;
     padding-left: 10%;
+    justify-content: space-between;
+
+}
+
+#container1{
+    position: absolute;
+    width: 100%;
+    min-height: max-content;
     
     
-   
 }
 
 #b11 {
     color: white;
-    padding-left: 16px;
-    padding-right: 16px;
+
     padding-top:5px;
     padding-bottom: 10px;
+    
 }
 
 .b12{
@@ -25,14 +60,28 @@
     
 }
 
-.b15{
-    color:black;
+#blist{
+    color: white
 }
 
-.b15:hover{
+#b15{
     
-font-size: large;
-color:white
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    padding-top:60px;
+    padding-bottom: 60px;
+    
+    
+}
+
+#b15:hover{
+    
+    background-image: linear-gradient(to top, #fca311 94%,black 15%);
+    
+    color: black;
+
 }
 
 
@@ -54,7 +103,7 @@ hr{
 }
 
 #blist:hover{
-color: white;
-font-weight: bolder;
+   
+    color: black;
 
 }
